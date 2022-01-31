@@ -11,7 +11,7 @@
   "telegram-bot",
   "pyrogram"
   ],
-  "stack": "container",
+  "stack": "Heruko-20",
   "env": {
     "API_ID": {2497276
       "description": "Get this value from https://my.telegram.org",
