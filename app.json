@@ -14,17 +14,17 @@
   ],
   "stack": "Heruko-20",
   "env": {
-    "API_ID": {3098057
+    "API_ID": {
       "description": "Get this value from https://my.telegram.org",
       "value": "",
       "required": true
     },
-    "API_HASH": {107322460318ff2d8cb30edb118be597
+    "API_HASH": {
       "description": "Get this value from https://my.telegram.org",
       "value": "",
       "required": true
     },
-    "BOT_TOKEN": {5298446554:AAEED-6GXxC_WxRyNXgz6Hk_FdLs2XJ43V4
+    "BOT_TOKEN": {
       "description": "A Bot's token from Botfather",
       "value": "",
       "required": true
@@ -39,32 +39,32 @@
       "value": ".",
       "required": true
     },
-    "MONGO_DB_URI": {mongodb+srv://akugay:akugay@cluster22.ly1qn.mongodb.net/akugay?retryWrites=true&w=majority
+    "MONGO_DB_URI": {
       "description": "Mongo DB URL",
       "value": "",
       "required": true
     },
-    "MUSIC_BOT_NAME": {MusicArt
+    "MUSIC_BOT_NAME": {
       "description": "A name for your Music Bot.",
       "value": "",
       "required": true
     },
-    "SUPPORT_CHANNEL": {https://t.me/MarinXUpdates
+    "SUPPORT_CHANNEL": {
       "description": "Support Channel Link if you have any, Leave blank if no support. Your link must start with https://t.me/",
       "value": "",
       "required": false
     },
-    "SUPPORT_GROUP": {https://t.me/MarinXSupport
+    "SUPPORT_GROUP": {
       "description": "Support Group Link if you have any, Leave blank if no support. Your link must start with https://t.me/",
       "value": "",
       "required": false
     },
-    "OWNER_ID": {2125081807
+    "OWNER_ID": {
       "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
       "value": "",
       "required": true
     },
-    "STRING_SESSION1": {AQBJPYLwDmfagbFyEtxZQTyp63Z8ofxRQm_OfzsHNo7-SVyqXJxEdSHBOCcpQfcWefAOxOwxL6viUwH7Nvap0rmplYTMN5rnry9KXQjomsEoHFlOtAAlnSKi0HlrNQEOv6q1OeWwfdoEJetwxOD_G1DgEVLj5fZUWRwAmCRB12ZsDU3stHqZLB0mcJVBsTL68H11vNs0_zeyyO6xgXEZL0cXB9rPgBSaQnt_6WEhDYaDziISajo50vqSdVJJkMSUjurbocE2U3LMRli33gwjgzml9D1LjEvx_Sss257MKTlvkiSbJPWKv5_Zala8-HO1-Z_Y8JmcOirxbRr8z2EO-TisAAAAASzsIRIA
+    "STRING_SESSION1": {
       "description": "A Pyrogram String Session. One Assistant is Compulsory.",
       "value": "",
       "required": true
@@ -89,7 +89,7 @@
       "value": "",
       "required": false
     },
-    "HEROKU_API_KEY": {4a7b14d7-54aa-4779-bc49-9f6f057ad0ea
+    "HEROKU_API_KEY": {
       "description": "Your Heroku account's API key",
       "value": "",
       "required": false
@@ -99,12 +99,12 @@
       "value": "",
       "required": false
     },
-    "LOG_GROUP_ID": {-1001775910981
+    "LOG_GROUP_ID": {
       "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
       "value": "",
       "required": true
     },
-    "SUDO_USERS": {2108356386 1789859817 2087717046
+    "SUDO_USERS": {
       "description": "The user id(s) of user(s) whom you would like to add as a SUDO. Multiple values shall be seperated with a space.",
       "value": "",
       "required": true
@@ -114,7 +114,7 @@
       "value": "",
       "required": true
     },
-    "UPSTREAM_REPO": {https://github.com/NotReallyShikhar/YukkiMusicBot
+    "UPSTREAM_REPO": {
       "description": "If you dont know this, Leave as it is",
       "value": "https://github.com/NotReallyShikhar/YukkiMusicBot",
       "required": true
