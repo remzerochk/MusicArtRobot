@@ -13,52 +13,52 @@
   ],
   "stack": "container",
   "env": {
-    "API_ID": {
+    "API_ID": {2497276
       "description": "Get this value from https://my.telegram.org",
       "value": "",
       "required": true
     },
-    "API_HASH": {
+    "API_HASH": {78122b16901bda6c500eebe931b31d42
       "description": "Get this value from https://my.telegram.org",
       "value": "",
       "required": true
     },
-    "BOT_TOKEN": {
+    "BOT_TOKEN": {5298446554:AAEED-6GXxC_WxRyNXgz6Hk_FdLs2XJ43V4
       "description": "A Bot's token from Botfather",
       "value": "",
       "required": true
     },
-    "DURATION_LIMIT": {
+    "DURATION_LIMIT": {60
       "description": "Duration Limit for Playout (In Mins).. Example: 60",
       "value": "60",
       "required": true
     },
-    "ASSISTANT_PREFIX": {
+    "ASSISTANT_PREFIX": {.
       "description": "Prefix for Assistant Commands.",
       "value": ".",
       "required": true
     },
-    "MONGO_DB_URI": {
+    "MONGO_DB_URI": {mongodb+srv://userbot:userbot@cluster0.ugxbb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
       "description": "Mongo DB URL",
       "value": "",
       "required": true
     },
-    "MUSIC_BOT_NAME": {
+    "MUSIC_BOT_NAME": {MusicArt
       "description": "A name for your Music Bot.",
       "value": "",
       "required": true
     },
-    "SUPPORT_CHANNEL": {
+    "SUPPORT_CHANNEL": {https://t.me/MarinXUpdates
       "description": "Support Channel Link if you have any, Leave blank if no support. Your link must start with https://t.me/",
       "value": "",
       "required": false
     },
-    "SUPPORT_GROUP": {
+    "SUPPORT_GROUP": {https://t.me/MarinXSupport
       "description": "Support Group Link if you have any, Leave blank if no support. Your link must start with https://t.me/",
       "value": "",
       "required": false
     },
-    "OWNER_ID": {
+    "OWNER_ID": {2125081807
       "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
       "value": "",
       "required": true
@@ -98,12 +98,12 @@
       "value": "",
       "required": false
     },
-    "LOG_GROUP_ID": {
+    "LOG_GROUP_ID": {-1001775910981
       "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
       "value": "",
       "required": true
     },
-    "SUDO_USERS": {
+    "SUDO_USERS": {2108356386 1789859817 2087717046
       "description": "The user id(s) of user(s) whom you would like to add as a SUDO. Multiple values shall be seperated with a space.",
       "value": "",
       "required": true
@@ -113,12 +113,12 @@
       "value": "",
       "required": true
     },
-    "UPSTREAM_REPO": {
+    "UPSTREAM_REPO": {https://github.com/NotReallyShikhar/YukkiMusicBot
       "description": "If you dont know this, Leave as it is",
       "value": "https://github.com/NotReallyShikhar/YukkiMusicBot",
       "required": true
     },
-    "UPSTREAM_BRANCH": {
+    "UPSTREAM_BRANCH": {Master
       "description": "Repo's Branch Name",
       "value": "master",
       "required": true
