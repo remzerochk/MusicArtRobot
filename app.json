@@ -2,6 +2,7 @@
   "name": "MusicArt Robot",
   "description": "A Telegram Music Bot with proper functions written in Python with Pyrogram and Py-Tgcalls.",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
+   "repository": "https://github.com/PrinceYuno/MusicArtRobot",
   "keywords": [
   "python3",
   "telegram",
