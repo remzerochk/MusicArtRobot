@@ -14,9 +14,9 @@
   ],
   "stack": "Heruko-20",
   "env": {
-    "API_ID": {15496152
+    "API_ID": {
       "description": "Get this value from https://my.telegram.org",
-      "value": "",
+      "value": "15496152",
       "required": true
     },
     "API_HASH": {
