@@ -19,52 +19,52 @@
       "value": "",
       "required": true
     },
-    "API_HASH": {6fc8da58e058f700fe4e81b9d15f0617
+    "API_HASH": {
       "description": "Get this value from https://my.telegram.org",
       "value": "",
       "required": true
     },
-    "BOT_TOKEN": {5298446554:AAEED-6GXxC_WxRyNXgz6Hk_FdLs2XJ43V4
+    "BOT_TOKEN": {
       "description": "A Bot's token from Botfather",
       "value": "",
       "required": true
     },
-    "DURATION_LIMIT": {60 
+    "DURATION_LIMIT": { 
       "description": "Duration Limit for Playout (In Mins).. Example: 60",
       "value": "60",
       "required": true
     },
-    "ASSISTANT_PREFIX": {/
+    "ASSISTANT_PREFIX": {
       "description": "Prefix for Assistant Commands.",
       "value": ".",
       "required": true
     },
-    "MONGO_DB_URI": {mongodb+srv://Greninja:qwerty123@dabi.rjgbu.mongodb.net/Cluster0?retryWrites=true&w=majority
+    "MONGO_DB_URI": {
       "description": "Mongo DB URL",
       "value": "",
       "required": true
     },
-    "MUSIC_BOT_NAME": {MusicArt
+    "MUSIC_BOT_NAME": {
       "description": "A name for your Music Bot.",
       "value": "",
       "required": true
     },
-    "SUPPORT_CHANNEL": {https://t.me/MarinXUpdates
+    "SUPPORT_CHANNEL": {
       "description": "Support Channel Link if you have any, Leave blank if no support. Your link must start with https://t.me/",
       "value": "",
       "required": false
     },
-    "SUPPORT_GROUP": {https://t.me/MarinXSupport
+    "SUPPORT_GROUP": {
       "description": "Support Group Link if you have any, Leave blank if no support. Your link must start with https://t.me/",
       "value": "",
       "required": false
     },
-    "OWNER_ID": {2125081807
+    "OWNER_ID": {
       "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
       "value": "",
       "required": true
     },
-    "STRING_SESSION1": {AQBTG5fjgNpjqmgBvBub_0zf7nLhh-GhPlLBwUzqI2sa9xZwOQqtSogvN6TE06G2nrMeykyqIHc2CfmaMJFu8wiIb4g4dqFnND2fTA4lMk8Mr_uP0GnMCoaVdLgz-q_1zi3HNfh3P46Il2Ecuj8wyslOtX7GMXBxYUBI88C1s_u3kIz-1l3Cc64rtB03fQA5dG1vQ7pm9pZO-174js4k5-eqfb9VFJV56aL_1ZqH3sEO1xGSaNT-qXJ8dbbBU44yVvd69lPfu2jkNbXLZyFey77z9MQxjP0LYoOo53vOXEUBQIFtCFXx7gl8jgiRdNke_gJrPDxak4rbjpCyDf6QxrSlAAAAASpQePMA
+    "STRING_SESSION1": {
       "description": "A Pyrogram String Session. One Assistant is Compulsory.",
       "value": "",
       "required": true
@@ -89,7 +89,7 @@
       "value": "",
       "required": false
     },
-    "HEROKU_API_KEY": {4a7b14d7-54aa-4779-bc49-9f6f057ad0ea
+    "HEROKU_API_KEY": {
       "description": "Your Heroku account's API key",
       "value": "",
       "required": false
@@ -99,27 +99,27 @@
       "value": "",
       "required": false
     },
-    "LOG_GROUP_ID": {-1001775910981
+    "LOG_GROUP_ID": {
       "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
       "value": "",
       "required": true
     },
-    "SUDO_USERS": {2087717046 2108356386 1789859817
+    "SUDO_USERS": {
       "description": "The user id(s) of user(s) whom you would like to add as a SUDO. Multiple values shall be seperated with a space.",
       "value": "",
       "required": true
     },
-    "LOG_SESSION": {AQBTG5fjgNpjqmgBvBub_0zf7nLhh-GhPlLBwUzqI2sa9xZwOQqtSogvN6TE06G2nrMeykyqIHc2CfmaMJFu8wiIb4g4dqFnND2fTA4lMk8Mr_uP0GnMCoaVdLgz-q_1zi3HNfh3P46Il2Ecuj8wyslOtX7GMXBxYUBI88C1s_u3kIz-1l3Cc64rtB03fQA5dG1vQ7pm9pZO-174js4k5-eqfb9VFJV56aL_1ZqH3sEO1xGSaNT-qXJ8dbbBU44yVvd69lPfu2jkNbXLZyFey77z9MQxjP0LYoOo53vOXEUBQIFtCFXx7gl8jgiRdNke_gJrPDxak4rbjpCyDf6QxrSlAAAAASpQePMA
+    "LOG_SESSION": {
       "description": "A Pyrogram String Session for LOGGING or u can also add STRING_SESSION1 Also.",
       "value": "",
       "required": true
     },
-    "UPSTREAM_REPO": {https://github.com/NotReallyShikhar/YukkiMusicBot
+    "UPSTREAM_REPO": {
       "description": "If you dont know this, Leave as it is",
       "value": "https://github.com/NotReallyShikhar/YukkiMusicBot",
       "required": true
     },
-    "UPSTREAM_BRANCH": {Master
+    "UPSTREAM_BRANCH": {
       "description": "Repo's Branch Name",
       "value": "master",
       "required": true
