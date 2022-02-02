@@ -8,7 +8,7 @@ from telegram import Bot, ParseMode, InlineKeyboardMarkup, InlineKeyboardButton,
 def link(update, context):
     'add new user'
     if update.effective_chat.type != update.effective_chat.PRIVATE:
-        button = InlineKeyboardMarkup([[InlineKeyboardButton(text="Link",url="t.me/spotifynowbot")]])
+        button = InlineKeyboardMarkup([[InlineKeyboardButton(text="Link",url="t.me/MusicArtRobot")]])
         update.effective_message.reply_text("Contact me in private chat to link your Spotify account.", reply_markup=button)
         return ConversationHandler.END
     message = "I'm gonna need some information for linking your Spotify account. Tell me, what should I call you?"
@@ -27,7 +27,7 @@ def getusername(update, context):
 def relink(update, context):
     'update stored token'
     if update.effective_chat.type != update.effective_chat.PRIVATE:
-        button = InlineKeyboardMarkup([[InlineKeyboardButton(text="Link",url="t.me/spotifynowbot")]])
+        button = InlineKeyboardMarkup([[InlineKeyboardButton(text="Link",url="t.me/MusicArtRobot")]])
         update.effective_message.reply_text("Contact me in private chat to link your Spotify account.", reply_markup=button)
         return
     if not sql.get_user(update.effective_user.id): 
@@ -60,11 +60,11 @@ def start(update, context):
     'handle start command with deep linking'
     text = update.effective_message.text
     if len(text) <= 7:
-        update.message.reply_text("Hi! I'm SpotifyNow and I you flex what you're listening to on Spotify. Tap /now to get started.")
+        update.message.reply_text("Hi! I'm MusicArt and I you flex what you're listening to on Spotify. Tap /flex to get started.")
     elif text.endswith('link'):
-        update.message.reply_text("Hi! I'm SpotifyNow and I you flex what you're listening to on Spotify. Tap /link to connect your account.")
+        update.message.reply_text("Hi! I'm MusicArt and I you flex what you're listening to on Spotify. Tap /connect to connect your account.")
     elif text.endswith('relink'):
-        update.message.reply_text("Spotify isn't letting me see what you're listening to! Try to /relink your Spotify account.")
+        update.message.reply_text("Spotify isn't letting me see what you're listening to! Try to /reconnect your Spotify account.")
     elif text.endswith('notsure'):
         update.message.reply_text("I'm not sure what you're listening to.")
     elif text.endswith('ads'):
@@ -76,11 +76,11 @@ def start(update, context):
             data = {'grant_type':'authorization_code','code':code(text),'redirect_uri':redirect_uri,'client_id':client_id,'client_secret':client_secret}
             authtoken = requests.post('https://accounts.spotify.com/api/token', data=data).json()['refresh_token']
         except: 
-            update.message.reply_text(f'Something went wrong. Try to /relink your account.')
+            update.message.reply_text(f'Something went wrong. Try to /reconnect your account.')
         else:
             sql.add_token(authtoken, update.effective_user.id)
             print(update.message.from_user.username+' just linked their account.')
-            message = "Yay! Your Spotify account is now linked. Tap /now anytime to flex what you're listening to. You can also use the inline mode by typing @SpotifyNowBot in any chat."
+            message = "Yay! Your Spotify account is now linked. Tap /flex anytime to flex what you're listening to. You can also use the inline mode by typing @MusicArtRobot in any chat."
             update.message.reply_text(message)
     update.effective_message.delete()
 
@@ -108,7 +108,7 @@ def nowplaying(update, context):
         uid = update.message.from_user.id
         authtoken = list(sql.get_user(uid)[0])[2]
     except: 
-        update.message.reply_text('You need to /link your Spotify account with me first.')
+        update.message.reply_text('You need to /connect your Spotify account with me first.')
         return
     try: 
         data = {
@@ -216,9 +216,9 @@ def inlinenow(update, context):
         update.inline_query.answer([], switch_pm_text="You're not listening to anything.", switch_pm_parameter='notlistening', cache_time=0)
 
 helptext = '''
-Tap /now to share what you're listening to on Spotify. You can also use the inline mode by typing @SpotifyNowBot in any chat.\n
-If you're new, you need to /link your account to get started. You can always /unlink it whenever you feel like.\n
-If you're facing errors, try restarting Spotify. No good? Send /cancel followed by /relink and if the issue persists, report it to @notdedsec.\n'''
+Tap /flex to share what you're listening to on Spotify. You can also use the inline mode by typing @MusicArtRobot in any chat.\n
+If you're new, you need to /connect your account to get started. You can always /disconnect it whenever you feel like.\n
+If you're facing errors, try restarting Spotify. No good? Send /cancel followed by /reconnect and if the issue persists, report it to @MarinXSupport.\n'''
 
 if __name__ == "__main__": 
     if not os.path.exists('spotifynow.db'): 
@@ -240,11 +240,11 @@ if __name__ == "__main__":
 
     updater.dispatcher.add_handler(link_handler)
     updater.dispatcher.add_handler(InlineQueryHandler(inlinenow))
-    updater.dispatcher.add_handler(CommandHandler('now', nowplaying))
+    updater.dispatcher.add_handler(CommandHandler('flex', nowplaying))
     updater.dispatcher.add_handler(CommandHandler('help', sendhelp))
     updater.dispatcher.add_handler(CommandHandler('start', start))
-    updater.dispatcher.add_handler(CommandHandler('unlink', unlink))
-    updater.dispatcher.add_handler(CommandHandler('relink', relink))
+    updater.dispatcher.add_handler(CommandHandler('disconnect', disconnect))
+    updater.dispatcher.add_handler(CommandHandler('reconnect', reconnect))
     updater.dispatcher.add_handler(CommandHandler('sstats', sstats))
     updater.start_polling()
     updater.idle()
