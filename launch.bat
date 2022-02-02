@@ -1,3 +1,3 @@
 @echo off
-py -3.7 MusicArt.py
+py -3.7 SpotifyNow.py
 pause
