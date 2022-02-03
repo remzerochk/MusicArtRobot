@@ -223,7 +223,7 @@ If you're facing errors, try restarting Spotify. No good? Send /cancel followed 
 if __name__ == "__main__": 
     if not os.path.exists('spotifynow.db'): 
         sql.create_table()
-    with open('config.json','r') as conf: 
+    with open("config.json",'r') as conf: 
         config = json.load(conf)
     dumpchannel, jkey, client_id, client_secret, redirect_uri, bot_token, sudoList = config.values()
     authlink = f"https://accounts.spotify.com/authorize?client_id={client_id}&response_type=code&redirect_uri={linkparse(redirect_uri)}&scope=user-read-currently-playing"
