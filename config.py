@@ -20,10 +20,10 @@ MUSIC_BOT_NAME = getenv("MusicArt")
 HEROKU_API_KEY = getenv("4a7b14d7-54aa-4779-bc49-9f6f057ad0ea")
 HEROKU_APP_NAME = getenv("MusicArt")
 
-UPSTREAM_REPO = getenv(https://github.com/NotReallyShikhar/YukkiMusicBot
-    "UPSTREAM_REPO", "https://github.com/NotReallyShikhar/YukkiMusicBot"
-)
-UPSTREAM_BRANCH = getenv("Master", "master")
+#UPSTREAM_REPO = getenv(https://github.com/NotReallyShikhar/YukkiMusicBot
+#    "UPSTREAM_REPO", "https://github.com/NotReallyShikhar/YukkiMusicBot"
+#)
+#UPSTREAM_BRANCH = getenv("Master", "master")
 
 if str(getenv("https://t.me/MarinXUpdates")).strip() == "":
     SUPPORT_CHANNEL = None
