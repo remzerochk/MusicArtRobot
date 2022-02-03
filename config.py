@@ -8,7 +8,7 @@ load_dotenv()
 
 get_queue = {}
 BOT_TOKEN = getenv("5298446554:AAEED-6GXxC_WxRyNXgz6Hk_FdLs2XJ43V4")
-API_ID = int(getenv("15496152", ""))
+API_ID = int(getenv("15496152"))
 API_HASH = getenv("6fc8da58e058f700fe4e81b9d15f0617")
 DURATION_LIMIT_MIN = int(getenv("60", "10"))
 ASSISTANT_PREFIX = list(getenv("/", ".").split())
