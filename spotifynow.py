@@ -226,7 +226,7 @@ if __name__ == "__main__":
     with open("config.json",'r') as conf: 
         config = json.load(conf)
     dumpchannel, jkey, client_id, client_secret, redirect_uri, bot_token, sudoList = config.values()
-    authlink = f"https://accounts.spotify.com/authorize?client_id={client_id}&response_type=code&redirect_uri={linkparse(redirect_uri)}&scope=user-read-currently-playing"
+    authlink = f"https://accounts.spotify.com/authorize?client_id=5e259dc4f4d148de92c2b612e4616f78&response_type=code&redirect_uri=http://google.com/callback&scope=user-read-currently-playing"
 
     updater = Updater(bot_token, use_context=True)
     os.system("title " + Bot(bot_token).first_name)
