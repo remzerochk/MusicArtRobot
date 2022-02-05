@@ -108,7 +108,7 @@ def nowplaying(update, context):
         uid = update.message.from_user.id
         authtoken = list(sql.get_user(uid)[0])[2]
     except: 
-        update.message.reply_text('You need to /connect your Spotify account with me first.')
+        update.message.reply_text('You need to /link your Spotify account with me first.')
         return
     try: 
         data = {
