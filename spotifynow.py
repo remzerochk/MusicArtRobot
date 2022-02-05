@@ -100,7 +100,7 @@ def getpic(r, uid, context):
         user = requests.get('https://files.catbox.moe/jp6szj.jpg')
     return(processor.process(username, songname, albumname, artists, crrnttime, totaltime, user, coverart))
 
-@run_async
+
 def nowplaying(update, context):
     'collects user info, requests spotify api for song info and sends the processed image'
     context.bot.sendChatAction(update.message.chat_id, ChatAction.TYPING)
@@ -240,7 +240,7 @@ if __name__ == "__main__":
 
     updater.dispatcher.add_handler(link_handler)
     updater.dispatcher.add_handler(InlineQueryHandler(inlinenow))
-    updater.dispatcher.add_handler(CommandHandler('flex', nowplaying))
+    updater.dispatcher.add_handler(CommandHandler('flex', nowplaying, run_async=True))
     updater.dispatcher.add_handler(CommandHandler('help', sendhelp))
     updater.dispatcher.add_handler(CommandHandler('start', start))
     updater.dispatcher.add_handler(CommandHandler('disconnect', cancel))
