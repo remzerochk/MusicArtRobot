@@ -243,7 +243,7 @@ if __name__ == "__main__":
     updater.dispatcher.add_handler(CommandHandler('flex', nowplaying))
     updater.dispatcher.add_handler(CommandHandler('help', sendhelp))
     updater.dispatcher.add_handler(CommandHandler('start', start))
-    updater.dispatcher.add_handler(CommandHandler('disconnect', disconnect))
+    updater.dispatcher.add_handler(CommandHandler('disconnect', cancel))
     updater.dispatcher.add_handler(CommandHandler('reconnect', reconnect))
     updater.dispatcher.add_handler(CommandHandler('sstats', sstats))
     updater.start_polling()
